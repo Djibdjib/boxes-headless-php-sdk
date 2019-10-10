@@ -4,6 +4,7 @@
     "require": {
         "php-curl-class/php-curl-class": "^8.6"
     },
+    "license": "MIT",
     "authors": [{
         "name": "Djibdjib",
         "email": "beejeridou@gmail.com"
