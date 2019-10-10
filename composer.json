@@ -1,6 +1,7 @@
 {
     "name": "djib/boxes-headless-php-sdk",
     "type": "library",
+    "version": "1.0",
     "description": "Boxes Headless PHP SDK",
     "keywords": ["Boxes Headless", "CMS Headless"],
     "homepage": "https://www.boxes-headless.com",
@@ -12,5 +13,11 @@
         "name": "Boxes Headless",
         "email": "contact@boxes-headless.com"
     }],
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Boxes\\": "/"
+        }
+    },
 }
