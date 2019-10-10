@@ -13,7 +13,7 @@
         "name": "Boxes Headless",
         "email": "contact@boxes-headless.com"
     }],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
