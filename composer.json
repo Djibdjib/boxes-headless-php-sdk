@@ -11,5 +11,6 @@
     "authors": [{
         "name": "Boxes Headless",
         "email": "contact@boxes-headless.com"
-    }]
+    }],
+    "minimum-stability": "stable"
 }
