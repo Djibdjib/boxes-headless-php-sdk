@@ -1,5 +1,5 @@
 {
-    "name": "djib/boxesheadless-php-sdk",
+    "name": "djib/boxes-headless-php-sdk",
     "description": "Boxes Headless PHP SDK",
     "require": {
         "php-curl-class/php-curl-class": "^8.6"
