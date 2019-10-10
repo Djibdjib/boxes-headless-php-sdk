@@ -1,12 +1,15 @@
 {
     "name": "djib/boxes-headless-php-sdk",
+    "type": "library",
     "description": "Boxes Headless PHP SDK",
+    "keywords": ["Boxes Headless", "CMS Headless"],
+    "homepage": "https://www.boxes-headless.com",
     "require": {
         "php-curl-class/php-curl-class": "^8.6"
     },
     "license": "MIT",
     "authors": [{
-        "name": "Djibdjib",
-        "email": "beejeridou@gmail.com"
+        "name": "Boxes Headless",
+        "email": "contact@boxes-headless.com"
     }]
 }
