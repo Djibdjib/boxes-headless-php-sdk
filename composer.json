@@ -1,0 +1,12 @@
+{
+    "name": "djib/boxesheadless-php-sdk",
+    "description": "Boxes Headless PHP SDK",
+    "require": {
+        "php-curl-class/php-curl-class": "^8.6"
+    },
+    "license": "GNU",
+    "authors": [{
+        "name": "Djibdjib",
+        "email": "beejeridou@gmail.com"
+    }]
+}
