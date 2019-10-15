@@ -6,7 +6,8 @@
     "keywords": ["Boxes Headless", "CMS Headless"],
     "homepage": "https://www.boxes-headless.com",
     "require": {
-        "php-curl-class/php-curl-class": "^8.6"
+        "php-curl-class/php-curl-class": "^8.6",
+        "mos/cimage": "^0.7.20"
     },
     "license": "MIT",
     "authors": [{

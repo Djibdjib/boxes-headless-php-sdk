@@ -1,19 +1,21 @@
 <?php
 namespace BoxesHeadless;
 
+use BoxesHeadless\Thumbnail;
 use Curl\Curl;
 use Exception;
 
 class BoxesHeadless {
 
     private $config = array(
-        "main_url" => "https://www.boxes-headless.com"
+        "main_url" => "https://www.boxes-headless.com",
+        'thumbnails' => []
     );
     private $cache = false;
 
     public function __construct($config) {
-        
         $this->set($config);
+        $this->thumbnail = new Thumbnail($this->config['thumbnails']);
     }
 
     public function set($config) {
