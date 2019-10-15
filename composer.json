@@ -18,7 +18,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "BoxesHeadless\\": "/src/"
+            "BoxesHeadless\\": "src/"
         }
     }
 }
