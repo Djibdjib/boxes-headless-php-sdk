@@ -1,7 +1,7 @@
 {
     "name": "djib/boxes-headless-php-sdk",
     "type": "library",
-    "version": "v1.0",
+    "version": "v1.1",
     "description": "Boxes Headless PHP SDK",
     "keywords": ["Boxes Headless", "CMS Headless"],
     "homepage": "https://www.boxes-headless.com",
