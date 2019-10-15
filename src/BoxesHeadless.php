@@ -30,6 +30,10 @@ class BoxesHeadless {
         return $this->config;
     }
 
+    public function getCache() {
+        return $this->cache;
+    }
+
     public function getProject($id)
     {
         return $this->request('project', $id);
