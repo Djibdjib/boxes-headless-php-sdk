@@ -44,7 +44,12 @@ class BoxesHeadless {
         return $this->request('boxe', $id);
     }
 
-    private function request($type, $id, $method="get") {
+    public function postBoxe($id, $send=array()) {
+
+        return $this->request('boxe', $id, "post", $send);
+    }
+
+    private function request($type, $id, $method="get", $toSend=array()) {
 
         $cache_filename = serialize($id);
 
@@ -54,13 +59,22 @@ class BoxesHeadless {
 
             $curl = new Curl();
             $curl->setDefaultJsonDecoder(true);
-            $curl->get($this->config['main_url'] . "/api/" . $type . "/" . $id, [
-                'KEY' => $this->config['api_key']
-            ]);
+
+            if($method == "get") {
+
+                $curl->get($this->config['main_url'] . "/api/" . $type . "/" . $id, [
+                    'KEY' => $this->config['api_key']
+                ]);
+            }
+            else {
+                $curl->post($this->config['main_url'] . "/api/" . $type . "/post/" . $id . "?KEY=" . $this->config['api_key'], [
+                    $toSend
+                ]);
+            }
 
             try {
                 $result = $this->array_to_object($curl->response);
-                if ($this->cache)
+                if ($this->cache && $method == "get")
                     $this->cache->write($cache_filename, json_encode($curl->response));
             } catch (Exception $e) {
                 echo 'Error: ' . $curl->errorCode . ': ' . $curl->errorMessage . "\n";
